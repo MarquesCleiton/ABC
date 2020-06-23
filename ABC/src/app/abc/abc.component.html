@@ -1,0 +1,15 @@
+<div class="container-fluid row border">
+    <div class="col-md-3 border">
+        <div class="row mt-2 " *ngFor="let linha of linhas">
+            <div class="col btn btn-primary mx-1" *ngFor="let coluna of colunas"(click)="teste(silabas[linha][coluna]);">
+                {{silabas[linha][coluna]}}
+            </div>
+        </div>
+    </div>
+    <div class="col border">
+        <h1>Atividade 1</h1>
+        <br>
+        <h1>IBAGEM</h1>
+        <h1>_ _ _ _ _</h1>
+    </div>
+</div>
