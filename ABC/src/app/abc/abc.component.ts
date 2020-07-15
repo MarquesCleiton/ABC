@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import Speech from 'speak-tts';
 
 @Component({
   selector: 'app-abc',
@@ -15,7 +14,7 @@ export class AbcComponent implements OnInit {
   constructor() { 
     this.silabas = 
     [
-      ["*", "A","E","I","O","U"],
+      ["*", "A" ,"E" ,"I" ,"O" ,"U" ],
       ["B", "BA","BE","BI","BO","BU"],
       ["C", "CA","CE","CI","CO","CU"],
       ["D", "DA","DE","DI","DO","DU"],
@@ -50,17 +49,8 @@ export class AbcComponent implements OnInit {
   }
 
   public teste(silaba:string){
-    const speech = new Speech();
     var audio = new Audio();
     audio.src = 'https://translate.google.com/#view=home&op=translate&sl=pt&tl=en&text=teste.';
     audio.play();
-
-    speech.speak({
-          text: silaba,
-      }).then(() => {
-          console.log("Success !")
-      }).catch(e => {
-          console.error("An error occurred :", e)
-      })
     }
 }

@@ -1,7 +1,7 @@
 <div class="container-fluid row border">
     <div class="col-md-3 border">
         <div class="row mt-2 " *ngFor="let linha of linhas">
-            <div class="col btn btn-primary mx-1" *ngFor="let coluna of colunas"(click)="teste(silabas[linha][coluna]);">
+            <div class="col btn btn-primary mr-1" *ngFor="let coluna of colunas"(click)="teste(silabas[linha][coluna]);">
                 {{silabas[linha][coluna]}}
             </div>
         </div>
